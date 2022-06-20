@@ -91,5 +91,5 @@ For more, go to [Examples](https://github.com/simplyrohan/simple-socket/tree/mai
 I'm open to contributes! If you know any features that can be implemented or simply found a bug, I'll gladly merge a pull request!
 
 ## Notes
-I'm still relativley new to sockets and for that matter, the entire Python language. So if you are runnign into an issue, please report an issue, as this package is not nearly complete.
+I'm still relativley new to sockets and for that matter, the entire Python language. So if you are running into an issue, please report an issue, as this package is not nearly complete.
 
