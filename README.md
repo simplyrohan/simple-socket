@@ -17,7 +17,11 @@ My hopes for this project in the future are:
 
  ```bash
  git clone  https://github.com/simplyrohan/simple-socket.git
- ```  
+
+--or--
+
+pip install simple-pysocket
+ ``` 
 
 ## Usage
 ### Server Side
