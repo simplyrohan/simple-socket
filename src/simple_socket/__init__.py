@@ -1,8 +1,21 @@
+import re
 import socket, threading
+
+class _Socket(socket.socket):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+    def send(string, flags):
+        super().sendall(str(string).encode("utf-8"), flags)
+    
+    def sendall(string, flags):
+                super().sendall(str(string).encode("utf-8"), flags)
+
+    def recv(bufsize=1024, flags=None):
+        return str(super().recv(bufsize, flags)).decode("utf-8")
 
 class Socket:
     def __init__(self, host, port, max_connections=5, is_host=None):
-        self.socket =  socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.socket =  _Socket(socket.AF_INET, socket.SOCK_STREAM)
         self.max_connections = max_connections
 
         self.host = host
